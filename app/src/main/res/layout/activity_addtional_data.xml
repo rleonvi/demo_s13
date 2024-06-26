@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addtional_data">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_cyan_50"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="Datos Adicionales"
+            android:textAlignment="center"
+            android:textColor="@color/md_cyan_900"
+            android:textSize="40dp" />
+
+        <EditText
+            android:id="@+id/edtPrimerNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Primer Nombre"
+            android:inputType="text"
+            android:textColor="@color/md_cyan_900"
+            android:textColorHint="@color/md_cyan_900" />
+
+        <EditText
+            android:id="@+id/edtSegundoNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Segundo Nombre"
+            android:inputType="text"
+            android:textColor="@color/md_cyan_900"
+            android:textColorHint="@color/md_cyan_900" />
+
+        <EditText
+            android:id="@+id/edtPrimerApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Primer Apellido"
+            android:inputType="text"
+            android:textColor="@color/md_cyan_900"
+            android:textColorHint="@color/md_cyan_900" />
+
+        <EditText
+            android:id="@+id/edtSegundoApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Segundo Apellido"
+            android:inputType="text"
+            android:textColor="@color/md_cyan_900"
+            android:textColorHint="@color/md_cyan_900" />
+
+        <Spinner
+            android:id="@+id/spInstitucion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp" />
+
+        <Spinner
+            android:id="@+id/spCarrera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGuardar_datosAdicionales"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_gradient"
+            android:drawablePadding="8dp"
+            android:onClick="InsertarDatosAdicionales"
+            android:paddingLeft="16dp"
+            android:text="Guardar"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
